@@ -1,0 +1,13 @@
+// Implement a function to find the 2nd most largest number in an array of iteger.
+const arr = [23,11,-5,9,-1];
+const n = 2;
+largestNumber(arr,n)
+function largestNumber(arr, n){
+    let sortedArr = arr.sort((a,b) => a-b)
+    console.log(sortedArr)
+    console.log(sortedArr[sortedArr.length-n])
+}
+// console.table([sortedArr, sortedArr[sortedArr.length-2]])
+
+// Article related to how sort
+// https://matcha.fyi/sort-not-working-javascript/#:~:text=This%20is%20because%20sort(),acts%20as%20the%20default%20callback.&text=This%20is%20our%20callback%20function,the%20correct%20and%20ascending%20order.

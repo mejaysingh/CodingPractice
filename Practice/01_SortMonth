@@ -1,0 +1,12 @@
+// sorting of array months in string 
+var someItems = ["Feb", "Jan", "Apr", "Dec", "Oct"];
+
+function sortMonths(a, b){
+  var correctMonthsOrder = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+  
+  return correctMonthsOrder.indexOf(a) - correctMonthsOrder.indexOf(b);
+}
+
+someItems.sort(sortMonths);
+
+console.log(someItems)
